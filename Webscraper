@@ -1,0 +1,74 @@
+import requests
+from bs4 import BeautifulSoup
+
+ for i in range(1,101): 
+  each_data = {} 
+  if i == 1: 
+    URL = 'https://www.lamudi.com.ph/house/buy/' 
+  elif i > 1: 
+    URL = 'https://www.lamudi.com.ph/house/buy/?page={}'.format(i) 
+  page = requests.get(URL) 
+  soup = BeautifulSoup(page.content, 'html.parser') 
+  all = soup.find_all("div",attrs={"class":"row ListingCell-row ListingCell-agent-redesign"}) 
+   
+  for each in all: 
+    all_details = each.find("div",attrs={"class":"ListingCell-AllInfo ListingUnit"}) 
+ 
+    try:
+      each_data["id"] = all_details['data-sku']
+    except:
+      pass
+
+    try: 
+      each_data["price"] = all_details['data-price']
+    except:
+      pass
+
+    try: 
+      each_data["category"] = all_details['data-category']
+    except:
+      pass
+
+    try: 
+      each_data["subcat"] = all_details['data-subcategories']
+    except:
+      pass
+
+    try: 
+      each_data["bedrooms"] = all_details['data-bedrooms']
+    except:
+      pass
+
+    try: 
+      each_data["bathrooms"] = all_details['data-bathrooms']
+    except:
+      pass
+
+    try: 
+      each_data["build_size"] = all_details['data-building_size']
+    except:
+      pass
+
+    try: 
+      each_data["land_size"] = all_details['data-land_size']
+    except:
+      pass
+
+    try: 
+      each_data["subdiv"] = all_details['data-subdivisionname']
+    except:
+      pass
+
+    try: 
+      each_data["data_furnished"] = all_details['data-furnished']
+    except:
+      pass
+
+    try: 
+      each_data["geo_loc"] = all_details['data-geo-point']
+    except:
+      pass 
+ 
+    all_data = [] 
+    all_data.append(each_data) 
+    print(each_data) 
