@@ -1,4 +1,4 @@
-# Integrated-Property-Valuation
+# Integrated Property Valuation Project
 This is a webscraper extracting property details from [Lamudi](https://www.lamudi.com.ph/), Philippine's #1 property listing website
 
 ## Usage
