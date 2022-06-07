@@ -61,4 +61,4 @@ Consists of a total of 11 variables:
 
 
 ## Output
-The output comprises a total of 3,000 property listing details and saved to Excel in a csv format 
+The [output](https://github.com/notlonelee/Integrated-Property-Valuation/blob/main/Webscraper%20Results.csv) comprises a total of 3,000 property listing details and saved in a csv format 
