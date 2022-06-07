@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 ```
 BeautifulSoup is a Python library for pulling data out of HTML files. It works with parsers to navigate, search and modify parse trees. 
 
-##Input
+## Input
 The input data source is all the property listing details available from Lamudi website's main display from pages 1-100
 Code presented currently only scrapes the Housing and Lots for sale
 
@@ -27,5 +27,5 @@ Consists of a total of 11 variables:
 - Geolocation coordinates 
 
 
-##Output
+## Output
 The output comprises a total of 3,000 property listing details and saved to Excel in a csv format 
