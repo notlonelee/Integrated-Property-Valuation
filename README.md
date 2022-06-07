@@ -18,13 +18,14 @@ Consists of a total of 11 variables:
 - Listing price
 - Housing category
 - Housing sub-category
-- # of bedrooms
-- # of bathrooms
+- Number of bedrooms
+- Number of bathrooms
 - Building size
 - Land size
 - Location sub-division name
 - Data on furnishings
 - Geolocation coordinates 
+
 
 ##Output
 The output comprises a total of 3,000 property listing details and saved to Excel in a csv format 
