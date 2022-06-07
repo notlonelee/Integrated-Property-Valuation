@@ -1,5 +1,5 @@
 # Integrated Property Valuation Project
-This is a webscraper extracting property details from [Lamudi](https://www.lamudi.com.ph/), Philippine's #1 property listing website
+This is a webscraper extracting property details from [Lamudi](https://www.lamudi.com.ph/), Philippine's #1 property listing website.
 This makes reference to the [Webscraper script](https://github.com/notlonelee/Integrated-Property-Valuation/blob/main/Webscraper)
 
 ## Usage
