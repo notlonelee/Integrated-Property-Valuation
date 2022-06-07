@@ -62,3 +62,13 @@ Consists of a total of 11 variables:
 
 ## Output
 The [output](https://github.com/notlonelee/Integrated-Property-Valuation/blob/main/Webscraper%20Results.csv) comprises a total of 3,000 property listing details and saved in a csv format 
+
+## Running the script
+1. Obtain the link of the website that you are going to scrape.
+2. Insert the link of the first page into 'URL' when i == 1. 
+3. If the website has more than one page, update the maximum number of pages to range(1, max)
+4. Obtain the alternate link and update the 'URL' for i>1. 
+5. Find the class that contains all the items you want to scrape and update it under the 'all' variable. 
+6. Similarly, find the class that contains the details of each item you want to scrape and update the 'each' variable. 
+7. Determine the variables you want to scrape and apply the try and except to each of these variables. 
+8. Create a new list to contain all the data scraped and append each data to it. 
